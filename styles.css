@@ -1,0 +1,130 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+
+}
+
+.logo {
+
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#commitments {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.commitment {
+    margin: 20px;
+}
+
+#image-line2 {
+    display: flex;
+
+    align-items: center;
+    padding: 10px 250px;
+    background-color: #f4f4f4; /* Adjust the background color as needed */
+}
+.image {
+    margin: 30px;
+    flex: 1; /* This ensures each image takes up an equal amount of space */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#services {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.service {
+    margin: 20px;
+}
+
+#portfolio {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+#image-line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 3px;
+    background-color: #f4f4f4; /* Adjust the background color as needed */
+}
+
+.image {
+    margin: 2px;
+    flex: 1; /* This ensures each image takes up an equal amount of space */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#title {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f4f4f4; /* Adjust the background color as needed */
+}
+
+#title h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the text color as needed */
+}
