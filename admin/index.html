@@ -23,13 +23,17 @@
 
     <div class="login-container">
         <h2>Login</h2>
-        <form action="login.php" method="POST">
+        <form id="login-form">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
             <button type="submit">Log In</button>
         </form>
+        <div id="response"></div>
+        <!-- Include the JavaScript file -->
+        <script src="log.js"></script>
+
     </div>
 </body>
 </html>
