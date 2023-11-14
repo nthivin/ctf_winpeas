@@ -25,3 +25,8 @@ Fr :
 7 - Une fois l'élévation de privilèges effectuée, un fichier passwd dans le répertoire root offre les identifiants admin pour les sites hébergés par le prestaire 
 
 8 - le drapeau se trouvera sur un ou plusieurs de ces sites
+
+
+
+
+gobuster dir -u localhost -w wordlist.txt
