@@ -30,3 +30,6 @@ Fr :
 
 
 gobuster dir -u localhost -w wordlist.txt
+libreoffice2john employeeList.ods > hash.txt
+john --wordlist=rockyou.txt hash.txt
+mdp employeeList.ods: ~!@#$%^&*()_+
