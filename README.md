@@ -29,7 +29,10 @@ Fr :
 
 
 
-gobuster dir -u localhost -w wordlist.txt
-libreoffice2john employeeList.ods > hash.txt
-john --wordlist=rockyou.txt hash.txt
-mdp employeeList.ods: ~!@#$%^&*()_+
+gobuster dir -u localhost -w wordlist.txt  
+libreoffice2john employeeList.ods > hash.txt  
+john --wordlist=rockyou.txt hash.txt  
+mdp employeeList.ods: ~!@#$%^&*()_+  
+
+pip install pykeepass  
+mdp pass.kdbx: 5Mn]c4KE*Apy)98  
