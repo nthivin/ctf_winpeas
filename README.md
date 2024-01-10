@@ -36,3 +36,16 @@ mdp employeeList.ods: ~!@#$%^&*()_+
 
 pip install pykeepass  
 mdp pass.kdbx: 5Mn]c4KE*Apy)98  
+
+Windows 10 1903 sur archive.org
+
+Set la langue par défaut à français pour avoir un clavier azerty, à faire sur tous les comptes
+
+Désactiver et arrêter Windows Update dans services.msc
+Vérif version avec commande systeminfo ou avec winver
+Désactiver Windows Defender en le supprimant avec powerrun by sordum (program files + x86 + ProgramData/Microsoft -> à faire 2x avec redémarrage entre) et avec clé registre (dans powerrun) (DisableAntiSpyware) -> faire attention que ça a bien fonctionné après redémarrage (clé toujours présente dans le registre), sinon winpeas est delete auto
+Désactiver pare-feu
+Installer OpenSSH sur sourceforge.net
+Créer un fichier dans les documents de l'admin
+Vérifier que curl marche
+Créer un utilisateur standard
