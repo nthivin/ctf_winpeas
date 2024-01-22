@@ -1,5 +1,7 @@
 # Guide
 
+Before you move to the exploit, make sure you allow the ports 8080 and 443 in your firewall.
+
 1 - On your */home/[user]/* of your attacker machine, do :
 
 ```
