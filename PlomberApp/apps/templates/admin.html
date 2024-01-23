@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Admin - Gary's Plumbing Services
+{% endblock %}
+
+{% block content %}
+
+  {% if show_flag %}
+    <div class="alert alert-info mt-3" role="alert">Here is the flag: {{ show_flag }}.</div>
+  {% endif %}
+{% endblock %}
