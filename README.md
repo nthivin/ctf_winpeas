@@ -49,3 +49,8 @@ Installer OpenSSH sur sourceforge.net
 Créer un fichier dans les documents de l'admin
 Vérifier que curl marche
 Créer un utilisateur standard
+
+mdp admin : u+5W53Mzm:2iC[W
+mdp Jack.Thompson : 9ph6ni!6M*SS,8C
+mdp Scarlett.Harrison : P@ssw0rd123
+mdp Mason.Bennett : f.D4vu+{4UaG8D7
