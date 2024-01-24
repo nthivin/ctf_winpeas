@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Check if two arguments are provided
+# Check if three arguments are provided. Otherwise, indicates how the script should be used
 if [ "$#" -ne 3 ]; then
     echo "Usage: $0 <login> <password> <target_ip>"
     exit 1
@@ -10,16 +10,17 @@ login=$1
 password=$2
 target_ip=$3
 
-# Use SSH to log into the remote machine and execute commands
+# Use sshpass to directly log in using ssh without having to type in the password manually
+# SCP to copy file from local machine to the victim machine
 sshpass -p "$password" scp ./winPEASx64.exe "$login"@"$target_ip":C:winPEASx64.exe
 
+# Launch the winPEAS executable
 sshpass -p "$password" ssh -tt "$login"@"$target_ip" 'winPEASx64.exe --output output.txt'
 
-# SCP to retrieve the output file
+# SCP to retrieve the output file 
 sshpass -p "$password" scp "$login"@"$target_ip":output.txt .
 
 # Display the results
-
 echo -e "---- SMB Versions Detected ----"
 
 nmap -p 445 --script smb2-capabilities "$target_ip" | awk '/smb2-capabilities:/,0{
@@ -32,6 +33,3 @@ nmap -p 445 --script smb2-capabilities "$target_ip" | awk '/smb2-capabilities:/,
 
     print $0;
 }'
-
-# Clean up (Optional)
-# rm output.txt
