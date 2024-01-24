@@ -54,3 +54,5 @@ mdp admin : u+5W53Mzm:2iC[W
 mdp Jack.Thompson : 9ph6ni!6M*SS,8C
 mdp Scarlett.Harrison : P@ssw0rd123
 mdp Mason.Bennett : f.D4vu+{4UaG8D7
+
+qemu-system-x86_64 -hda Windows_10_1903.qcow2 -m 8092 -smp 8
