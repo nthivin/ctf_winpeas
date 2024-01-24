@@ -32,7 +32,8 @@ Fr :
 gobuster dir -u localhost -w wordlist.txt  
 libreoffice2john employeeList.ods > hash.txt  
 john --wordlist=rockyou.txt hash.txt  
-mdp employeeList.ods: ~!@#$%^&*()_+  
+mdp employeeList.ods: ~!@#$%^&*()_+
+john --format=raw-md5 --wordlist=rockyou.txt hash.txt  
 
 pip install pykeepass  
 mdp pass.kdbx: 5Mn]c4KE*Apy)98  

